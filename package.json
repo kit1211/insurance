@@ -3,13 +3,24 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@pinecone-database/pinecone": "^4.0.0",
+    "elysia": "latest",
+    "fs": "^0.0.1-security",
+    "langchain": "^0.3.10",
+    "langsmith": "^0.2.15",
+    "openai": "^4.77.4",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.10.38",
+    "tesseract.js": "^6.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/pdf-parse": "^1.1.4",
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "index.js"
 }
